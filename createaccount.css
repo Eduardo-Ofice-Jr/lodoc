@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3874ec;
+}
+
+.mae form{
+    width: 570px;
+    height: 380px;
+    text-align: center;   
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.mae fieldset{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #5e5d5d;
+}
+
+.input_user, .input_senha, .input_cargo{
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.input_check, label{
+    position: relative;
+    left: -212px;
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+label{
+    position: relative;
+    bottom: 2px;
+}
+
+button{
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #3874ec;
+    background-color: #3874ec;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+}
+
+.abrir_conta{
+    text-decoration: none;
+    color: #849ce2;
+}
+
+.abrir_conta:hover{
+    text-decoration: underline;
+}
