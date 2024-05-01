@@ -68,6 +68,12 @@ button{
 
 }
 
+.link_upload{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+}
+
 .abrir_conta{
     text-decoration: none;
     color: #849ce2;
