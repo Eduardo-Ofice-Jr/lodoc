@@ -67,7 +67,7 @@ h1{
     font-size: 36px;
 }
 
-.box_upload{
+.box_img{
     margin-top: 30px;
     background-color: #3874ec;
     border-radius: 10px;
@@ -85,34 +85,34 @@ img{
     height: 50px;
 }
 
-.custom-file-container {
-    position: relative;
-    display: inline-block;
-    width: 200px; /* Defina a largura desejada para o contêiner */
-  }
-  
-  .custom-file-label {
-    position: relative;
-    top: 30px;
-    width: 200px;
-    padding: 15px;
+
+.box_upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.input_upload{
+    display: none;
+}
+
+.label_upload{
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 6px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 225px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     border-radius: 5px;
     font-weight: 900;
-    border: 1px solid white;
-    display: inline-block;
-    cursor: pointer;
-    
-  }
-  
-  .hidden-input {
-    position: absolute;
-    width: 100%; /* Preencher todo o espaço disponível no contêiner */
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
+
+}
 
   
   .info{

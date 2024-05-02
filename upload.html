@@ -19,17 +19,17 @@
             <article>
                 <div class="mae">
                 <h1>Gerenciador de documentos</h1>
-                <div class="box_upload">
+                <div class="box_img">
                     <div class="icons">
                     <img src="Icon/passport.png" alt="*">
                     <img src="Icon/pdf.png" alt="*">
                     <img src="Icon/png.png" alt="*">
                     </div>
                     <form action="*" class="button_upload">
-                        <div class="custom-file-container">
-                            <label for="fileInput" class="custom-file-label" id="documento_input">ESCOLHER ARQUIVOS</label>
-                            <input type="file" id="fileInput" class="hidden-input" accept=".pdf, .png, .Word, .jpeg">
-                            <input type="submit">
+                        <div class="box_upload">
+                            <label for="input_upload" class="label_upload" tabindex="0"</label>
+                            <input type="file" accept=".png, .pdf, .Word, .imagem" class="input_upload" id="input_upload">
+                            <span class="descricao_upload" id="descricao_upload"></span>
                           </div>
                     </form>
                 </div>
@@ -42,9 +42,6 @@
                 </p>
             </div>
         </main>
-
-
-    
     </div>
 
     <script src="app.js"></script>
