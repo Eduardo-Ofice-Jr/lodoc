@@ -37,3 +37,33 @@ inputFile.addEventListener('change', function(e) {
     }
     console.log(file);
 }) 
+
+
+function enviarArquivo() {
+    const inputUpload = document.getElementById('input_upload');
+    const arquivo = inputUpload.files[0];
+
+    if (arquivo) {
+        const formData = new FormData();
+        formData.append('arquivo', arquivo);
+
+        fetch('gerenciamento.html', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                console.log('Arquivo enviado com sucesso.');
+                // Redireciona para a página de destino, se necessário
+                window.location.href = 'gerenciamento.html';
+            } else {
+                console.error('Erro ao enviar o arquivo.');
+            }
+        })
+        .catch(error => {
+            console.error('Erro de rede:', error);
+        });
+    } else {
+        console.error('Nenhum arquivo selecionado.');
+    }
+}
