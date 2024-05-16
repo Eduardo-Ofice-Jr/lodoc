@@ -36,8 +36,10 @@ nav {
     padding: 5px;
     font-size: 16px;
     width: 120px;
+    border-radius: 4px;
     background-color: #3874ec;
-    border: 1px solid white;
+    background-image: linear-gradient(-30deg, #3874ec 30%, #60c5ff80);
+    border: 1px solid #60c5ff30;
     color: white;
     cursor: pointer;
 }
@@ -89,7 +91,7 @@ h1 {
 
 .button_iniciar {
     margin-top: 28px;
-    background: #3874ec;
+    background-image: linear-gradient(-30deg, #3874ec 30%, #60c5ff);
     color: white;
     border: none;
     border-radius: 4px;
@@ -102,8 +104,7 @@ h1 {
 }
 
 .button_iniciar:hover {
-    transform: scale(1.02);
-    background-color: #265ece;
+    transform: scale(1.03);   
 }
 
 .direita {
