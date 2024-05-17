@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
-    <link rel="stylesheet" href="../styles/login.css">    
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
 </head>
+
 <body>
     <div class="mae">
-            <form action="">
-                <fieldset>
-                    <h1>Seja Bem Vindo ao lodoc!</h1>
-                    <br>
-                    <input type="text" placeholder="Usuário" class="input_user" id="input_user">    
-                    <br>          
-                    <input type="password" placeholder="Senha" class="input_senha" id="input_senha">
-                    <br>
-                    <input type="checkbox" class="input_check" id="input_check">
-                    <label for="input_check">Salvar dados</label>
-                    <br>
-                    <button onclick="entrar()"><a href="upload.html" class="link_upload">Entrar</a></button>
-                    <br>
-                    <a href="createaccount.html" class="abrir_conta" id="abrir_conta">Criar conta</a>
-                </fieldset>
-            </form>
+        <form action="">
+            <h1>Login</h1>
+            <p class="form__desc">
+                Preencha os campos abaixo para entrar na sua conta
+            </p>
+
+            <input type="text" placeholder="Usuário" class="input_user" id="input_user" />
+            <input type="password" placeholder="Senha" class="input_senha" id="input_senha" />
+
+            <button onclick="entrar()">
+                <a href="upload.html" class="link_upload">Entrar</a>
+            </button>
+
+            <p>
+                Ainda não tem uma conta?
+                <a href="createaccount.html" class="abrir_conta" id="abrir_conta">Criar conta</a>
+            </p>
+        </form>
     </div>
 
     <script src="https://unpkg.com/notie"></script>
     <script src="*"></script>
-    
 </body>
+
 </html>
