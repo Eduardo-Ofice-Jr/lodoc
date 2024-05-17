@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crie uma conta</title>
+    <link rel="stylesheet" href="../styles/createaccount.css" />
+</head>
+
+<body>
+    <div class="mae">
+        <form>
+            <h1>Crie a sua conta!</h1>
+            <p class="form__desc">
+                Preencha todos os campos abaixo para realizar o seu cadastro
+            </p>
+
+            <input type="text" placeholder="Nome completo" class="input_cargo" id="input_cargo" />
+            <input type="text" placeholder="Nome de usuário" class="input_user" id="input_user" />
+            <input type="password" placeholder="Senha" class="input_senha" id="input_senha" />
+            <input type="password" placeholder="Confirmar Senha" class="input_senha" id="confirmar_senha" />
+
+            <button onclick="submeter()">Submeter</button>
+
+            <p>
+                Já tem conta?
+                <a href="login.html" class="abrir_conta" id="abrir_conta">Conecte-se</a>
+            </p>
+        </form>
+    </div>
+    <script src="createaccount.js"></script>
+</body>
+
+</html>
