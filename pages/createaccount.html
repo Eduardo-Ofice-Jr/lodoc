@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crie uma conta</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css" />
     <link rel="stylesheet" href="../styles/createaccount.css" />
 </head>
 
@@ -15,21 +16,22 @@
             <p class="form__desc">
                 Preencha todos os campos abaixo para realizar o seu cadastro
             </p>
-
-            <input type="text" placeholder="Nome completo" class="input_cargo" id="input_cargo" />
-            <input type="text" placeholder="Nome de usuário" class="input_user" id="input_user" />
-            <input type="password" placeholder="Senha" class="input_senha" id="input_senha" />
-            <input type="password" placeholder="Confirmar Senha" class="input_senha" id="confirmar_senha" />
-
-            <button onclick="submeter()">Submeter</button>
+            
+            <input type="text" placeholder="Nome completo" class="input_name" id="input_name" />
+            <input type="text" placeholder="Nome de usuário" class="input_username" id="input_username" />
+            <input type="password" placeholder="Senha" class="input_password" id="input_password" />
+            <input type="password" placeholder="Confirmar Senha" class="input_confirm-password" id="confirm-password" />
+            
+            <button id="submit_btn">Submeter</button>
 
             <p>
                 Já tem conta?
                 <a href="login.html" class="abrir_conta" id="abrir_conta">Conecte-se</a>
             </p>
         </form>
-    </div>
-    <script src="createaccount.js"></script>
+        </div>
+    <script src="https://unpkg.com/notie"></script>
+    <script src="../scripts/create-account.js"></script>
 </body>
 
 </html>
