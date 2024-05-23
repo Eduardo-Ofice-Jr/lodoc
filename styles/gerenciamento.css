@@ -1,72 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body{
-  background-color: #3874ec;
+body {
+  background-image: linear-gradient(30deg, #3874ec, #60c5ff);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
 }
 
-main{
+header {
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  font-family: Nunito, sans-serif;
+}
+
+.header-username {
+  font-size: 1.25rem;
+}
+
+main {
   background-color: white;
   border-radius: 20px;
-  width: 80%;
-  height: 550px;
-}
-
-.mae{
-  text-align: center;
-  
-}
-
-h1{
-  margin-top: 30px;
-}
-
-input{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 1280px;
   width: 95%;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid black;
-  font-size: 16px;
+  min-height: 550px;
+  transition: 200ms ease-in width;
+  margin-bottom: 2rem;
 }
 
-.card{
+h1 {
+  text-align: center;
+  font-family: Nunito, sans-serif;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.main__container {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.label-file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  border: 1px dashed black;
+  border-radius: 20px;
+}
+
+.label-file:hover {
+  background-color: rgb(237, 235, 235);
   cursor: pointer;
-  font-size: 16px;
-  padding: 5px;
+}
+
+.label-file p {
+  font-size: 1rem;
+}
+
+.cards__container {
+  cursor: pointer;
   margin: auto;
   text-align: center;
-  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  /* padding: 10px; */
+  height: 250px;
+  border-radius: 4px;
   border: 1px solid rgb(152, 151, 151);
-  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-family: Nunito, sans-serif;
+  background-color: white;
+  overflow: hidden;
 }
 
-.card:hover{
-  background-color: rgb(237, 235, 235);
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: 250ms ease-in-out;
 }
 
-button{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.card:hover img {
+  translate: 0 -45px;
+}
+
+.card h3 {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: Nunito, sans-serif;
+  padding: 0.5rem;
+}
+
+.card:hover :where(h3, p) {
+  animation: fadeinTitle 0.5s forwards;
+}
+
+
+@keyframes fadeinTitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 -45px;
+  }
+
+}
+
+button {
   color: black;
   border-radius: 10px;
-  border: 1px solid black;
+  border: none;
+  background-color: white;
   margin-top: 7px;
   margin-bottom: 6px;
   font-weight: 400;
-  width: 10%;
   height: 30px;
   font-size: 13px;
   cursor: pointer;
 }
 
+@media screen and (max-width: 1020px) {
+  main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .cards__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cards__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  h1 {
+    padding: .75rem;
+    font-size: min(calc(9px + 5vw), 2rem);
+  }
+}
