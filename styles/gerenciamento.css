@@ -50,7 +50,7 @@ main {
   border-radius: 20px;
   max-width: 1280px;
   width: 95%;
-  min-height: 550px;
+  min-height: 640px;
   transition: 200ms ease-in width;
   margin-bottom: 2rem;
 }
