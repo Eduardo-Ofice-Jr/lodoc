@@ -26,7 +26,7 @@ function handleFileSelect(event) {
 
     const fileType = selectedFile.type;
     if (!fileType.startsWith("image/")) {
-        notie.alert({text:"Por favor, selecione um arquivo de imagem."});
+        notfie.alert("Por favor, selecione um arquivo de imagem.");
         return;
     }
 
@@ -58,6 +58,9 @@ function uploadImage(selectedFile) {
         body: formData,
     })
         .then((response) => {
+            if (!response.ok) {
+                throw new Error("token not found");
+            }
             response.json();
         })
         .then((data) => {
